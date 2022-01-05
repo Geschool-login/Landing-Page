@@ -1,0 +1,84 @@
+.kab-page {
+    font-family: pink-chicken;
+}
+
+.main-content-container {
+    margin: 70px 0 80px 0;
+}
+
+.main-container .content-item .item .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.main-container .content-item .item:hover .overlay {
+    opacity: 0.2;
+}
+
+.main-container .content-item .item {
+    width: 40%;
+    height: 200px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+.main-container .content-item .item .item-logo {
+    width: 80px;
+    height: 112px;
+    z-index: 2;
+}
+
+.main-container .content-item .item h4 {
+    letter-spacing: 0.045em;
+    text-shadow: 3.82759px 2.55172px 0px rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+
+.main-container .content-item .item p {
+    text-decoration: underline;
+    z-index: 2;
+}
+
+.main-container .content-footer {
+    font-family: Poppins;
+}
+
+.main-container .content-footer h5 {
+    font-weight: 600;
+}
+
+.back-container a {
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.back-container a:hover {
+    color: #fff;
+}
+
+.btn-back {
+    background: #55ACEE;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Poppins;
+    transition: .2s ease;
+}
+
+.back-container .btn-back:hover {
+    background: #479bdb;
+}

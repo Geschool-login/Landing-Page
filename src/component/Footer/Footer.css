@@ -1,0 +1,62 @@
+.footer-container {
+    padding: 50px 100px 25px 100px;
+    background: linear-gradient(0deg, #185ADB -4.21%, #40B5F0 100%);
+    color: #fff;
+}
+
+.footer-container h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.footer-content {
+    width: 30%;
+    display: flex;
+    margin: 40px 0 70px 0;
+}
+
+.footer-content .logo img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.footer-content .contact {
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content .contact h4 {
+    font-weight: 600;
+}
+
+.footer-content .social {
+    display: flex;
+}
+
+.footer-content .social ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.footer-content a {
+    position: relative;
+    margin-right: 10px;
+    transition: .3s ease;
+    top: 0;
+}
+
+.footer-content li:hover a {
+    top: -5px;
+}
+
+.footer-content .social img {
+    width: 40px;
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.footer-container .copyright {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
