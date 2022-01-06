@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
     BrowserRouter as Router,
     Route,
@@ -9,7 +9,17 @@ import ProvPage from './view/ProvPage';
 import HomePage from './view/HomePage'
 import KabPage from './view/KabPage'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default function Index() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1500
+        });
+    }, []);
+
     return (
         <Router>
             <Routes>

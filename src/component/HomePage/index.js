@@ -12,7 +12,7 @@ export default function Main() {
     return (
         <div className='main-container'>
             <div className="main-web-container">
-                <div className="main-item">
+                <div className="main-item" data-aos={'fade-down'}>
                     <div className="d-flex">
                         <SlickKab1 />
                         <SlickKab2 />

@@ -2,3 +2,32 @@
     border-radius: 0 0 20px 20px;
 }
 
+.item-logo-i {
+    width: 200px;
+    height: 200px !important;
+}
+
+@media (max-width: 991px) {
+    .main-item-img .item-logo {
+        width: 120px;
+        height: 160px;
+    }
+
+    .item-logo-i {
+        width: 160px !important;
+        height: 170px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-item-img .item-logo {
+        width: 90px;
+        height: 110px;
+    }
+
+    .item-logo-i {
+        width: 100px !important;
+        height: 110px !important;
+    }
+}
+
