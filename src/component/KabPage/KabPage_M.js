@@ -9,6 +9,8 @@ import logoMagelang from '../../assets/img/logo/magelang.png'
 import logoBantul from '../../assets/img/logo/bantul.png'
 import logoKulonProgo from '../../assets/img/logo/kulonprogo.png'
 import logoBukittinggi from '../../assets/img/logo/bukittinggi.png'
+import logoPekanbaru from '../../assets/img/logo/pekanbaru.png'
+import logoJeneponto from '../../assets/img/logo/jeneponto.png'
 
 import bgPadang from '../../assets/img/web-bg/padang.png'
 import bgYogya from '../../assets/img/web-bg/yogya.png'
@@ -19,6 +21,8 @@ import bgMagelang from '../../assets/img/web-bg/magelang.png'
 import bgBantul from '../../assets/img/web-bg/bantul.png'
 import bgKulonProgo from '../../assets/img/web-bg/kulonprogo.png'
 import bgBukittinggi from '../../assets/img/web-bg/bukittinggi.png'
+import bgPekanbaru from '../../assets/img/web-bg/pekanbaru.png'
+import bgJeneponto from '../../assets/img/web-bg/jeneponto.png'
 
 import iconArrow from '../../assets/img/icon/arrow.svg'
 
@@ -32,6 +36,7 @@ export default function KabPage() {
     const [main_m3, setMain_m3] = useState([])
     const [main_m4, setMain_m4] = useState([])
     const [main_m5, setMain_m5] = useState([])
+    const [main_m6, setMain_m6] = useState([])
 
 
     const summary_m = {
@@ -115,6 +120,24 @@ export default function KabPage() {
                 'region': 'Tangerang',
                 'logo': `${logoTangsel}`,
                 'bg': `${bgTangsel}`
+            },
+            {
+                'name': 'Geschool Pekanbaru',
+                'desc': 'pekanbaru.geschool.net',
+                'link': 'https://pekanbaru.geschool.net',
+                'region': 'Pekanbaru',
+                'logo': `${logoPekanbaru}`,
+                'bg': `${bgPekanbaru}`
+            },
+        ],
+        items6: [
+            {
+                'name': 'Geschool Jeneponto',
+                'desc': 'jeneponto.geschool.net',
+                'link': 'https://jeneponto.geschool.net',
+                'region': 'Jeneponto',
+                'logo': `${logoJeneponto}`,
+                'bg': `${bgJeneponto}`
             }
         ]
     }
@@ -125,14 +148,16 @@ export default function KabPage() {
         setMain_m3(summary_m.items3)
         setMain_m4(summary_m.items4)
         setMain_m5(summary_m.items5)
+        setMain_m6(summary_m.items6)
     }, [])
 
     return (
         <div className="main-container text-center kab-page">
-            <h2>Selamat Datang di Web Kota / Kabupaten</h2>
 
             <div className="main-content-container">
-                <div className="content-item d-flex mb-5" data-aos={'zoom-in'}>
+                <h2>Selamat Datang di Web Kota / Kabupaten</h2>
+
+                <div className="content-item d-flex justify-content-center mb-5">
                     {
                         main_m1.map((item, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
@@ -144,7 +169,7 @@ export default function KabPage() {
                         ))
                     }
                 </div>
-                <div className="content-item d-flex mb-5" data-aos={'zoom-in'}>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
                     {
                         main_m2.map((item, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
@@ -156,7 +181,7 @@ export default function KabPage() {
                         ))
                     }
                 </div>
-                <div className="content-item d-flex mb-5" data-aos={'zoom-in'}>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
                     {
                         main_m3.map((item, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
@@ -168,7 +193,7 @@ export default function KabPage() {
                         ))
                     }
                 </div>
-                <div className="content-item d-flex mb-5" data-aos={'zoom-in'}>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
                     {
                         main_m4.map((item, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
@@ -180,7 +205,7 @@ export default function KabPage() {
                         ))
                     }
                 </div>
-                <div className="content-item d-flex" data-aos={'zoom-in'}>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
                     {
                         main_m5.map((item, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
@@ -192,6 +217,26 @@ export default function KabPage() {
                                     :
                                     {
                                         width: '35px',
+                                        height: '40px'
+                                    }} />
+                                <p>{item.desc}</p>
+                                <div className="overlay"></div>
+                            </a>
+                        ))
+                    }
+                </div>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
+                    {
+                        main_m6.map((item, index) => (
+                            <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
+                                <h4>{item.name}</h4>
+                                <img src={item.logo} className="item-logo" alt={item.region} srcSet="" style={item.region !== 'Jeneponto' ? {
+                                    width: '30px',
+                                    height: '40px'
+                                }
+                                    :
+                                    {
+                                        width: '40px',
                                         height: '40px'
                                     }} />
                                 <p>{item.desc}</p>

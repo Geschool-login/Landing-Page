@@ -43,10 +43,21 @@
 }
 
 .main-item-img .item-logo {
+    width: 160px;
+    height: 200px;
+    z-index: 2;
+    transition: .5s ease;
+}
+
+.main-item-img .item-logo-slick-kab {
     width: 150px;
     height: 200px;
     z-index: 2;
     transition: .5s ease;
+}
+
+.main-item-img:hover .item-logo-slick-kab {
+    transform: scale(1.1);
 }
 
 .main-item-img:hover .item-logo {
@@ -91,13 +102,18 @@
         font-size: 16px;
     }
 
-    .main-item-img .item-logo {
-        width: 80px;
-        height: 100px;
+    .main-item-img .item-logo-slick-kab-s {
+        width: 75px;
+        height: 80px;
     }
 
     .main-item-img p {
         font-size: 12px;
         font-weight: 600;
+    }
+
+    .item-logo-slick-kab {
+        width: 70px !important;
+        height: 90px !important;
     }
 }

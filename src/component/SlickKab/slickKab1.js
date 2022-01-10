@@ -84,7 +84,7 @@ export default function SlickKab1() {
                         <div className='col-12'>
                             <Link key={index} to="/page/kab" className="col-12 main-item-img left-slick-item" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
                                 <h2>{item.name}</h2>
-                                <img src={item.logo} className={ item.region !== 'Yogyakarta' ? 'item-logo-i' : 'item-logo' } alt={item.region} srcSet="" />
+                                <img src={item.logo} className={ item.region !== 'Tangerang' ? 'item-logo-slick-kab' : 'item-logo-slick-kab-s' } alt={item.region} srcSet="" />
                                 <p>{item.desc}</p>
                                 <div className="overlay"></div>
                             </Link>

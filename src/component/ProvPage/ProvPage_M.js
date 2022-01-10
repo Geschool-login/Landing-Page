@@ -4,7 +4,7 @@ import logoBanten from '../../assets/img/logo/banten.png'
 import logoSumbar from '../../assets/img/logo/sumbar.png'
 import logoMadrasahDiy from '../../assets/img/logo/madrasah-diy.png'
 import logoMuhammadiyah from '../../assets/img/logo/muhammadiyah.png'
-import logoMadrasahSumbar from '../../assets/img/logo/madrasah.png'
+import logoMadrasah from '../../assets/img/logo/madrasah.png'
 
 import bgYogyakarta from '../../assets/img/main-bg/yogyakarta.png'
 import bgBanten from '../../assets/img/main-bg/banten.png'
@@ -12,6 +12,8 @@ import bgSumbar from '../../assets/img/main-bg/sumbar.png'
 import bgMadrasahDiy from '../../assets/img/main-bg/madrasah-diy.png'
 import bgMuhammadiyah from '../../assets/img/main-bg/muhammadiyah.png'
 import bgMadrasahSumbar from '../../assets/img/main-bg/madrasah-sumbar.png'
+import bgMadrasahJateng from '../../assets/img/main-bg/madrasah-jateng.png'
+import bgMadrasahSumut from '../../assets/img/main-bg/madrasah-sumut.png'
 
 import iconArrow from '../../assets/img/icon/arrow.svg'
 
@@ -23,6 +25,7 @@ export default function ProvPage() {
     const [main1, setMain1] = useState([])
     const [main2, setMain2] = useState([])
     const [main3, setMain3] = useState([])
+    const [main4, setMain4] = useState([])
 
     const summary = {
         items1: [
@@ -75,8 +78,26 @@ export default function ProvPage() {
                 'desc': 'madrasahsumbar.net',
                 'link': 'https://madrasahsumbar.net',
                 'region': 'Madrasah-Sumbar',
-                'logo': `${logoMadrasahSumbar}`,
+                'logo': `${logoMadrasah}`,
                 'bg': `${bgMadrasahSumbar}`
+            },
+        ],
+        items4: [
+            {
+                'name': 'Madrasah Jateng',
+                'desc': 'madrasahjateng.net',
+                'link': 'https://madrasahjateng.net',
+                'region': 'Madrasah-Jateng',
+                'logo': `${logoMadrasah}`,
+                'bg': `${bgMadrasahJateng}`
+            },
+            {
+                'name': 'Madrasah Sumut',
+                'desc': 'madrasahsumut.net',
+                'link': 'https://madrasahsumut.net',
+                'region': 'Madrasah-Sumut',
+                'logo': `${logoMadrasah}`,
+                'bg': `${bgMadrasahSumut}`
             },
         ]
     }
@@ -85,13 +106,15 @@ export default function ProvPage() {
         setMain1(summary.items1)
         setMain2(summary.items2)
         setMain3(summary.items3)
+        setMain4(summary.items4)
     }, [])
 
     return (
         <div className="main-container text-center kab-page">
-            <h3>Selamat Datang di Web Provinsi / Institusi</h3>
             <div className="main-content-container">
-                <div className="content-item d-flex mb-5" data-aos={'zoom-in'}>
+                <h2>Selamat Datang di Web Provinsi / Institusi</h2>
+
+                <div className="content-item d-flex justify-content-center mb-5">
                     {
                         main1.map((item, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item mx-3" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
@@ -111,7 +134,7 @@ export default function ProvPage() {
                         ))
                     }
                 </div>
-                <div className="content-item d-flex mb-5" data-aos={'zoom-in'}>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
                     {
                         main2.map((item, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item mx-3" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
@@ -131,9 +154,29 @@ export default function ProvPage() {
                         ))
                     }
                 </div>
-                <div className="content-item d-flex mb-5" data-aos={'zoom-in'}>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
                     {
                         main3.map((item, index) => (
+                            <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item mx-3" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
+                                <h4>{item.name}</h4>
+                                <img src={item.logo} className="item-logo" alt={item.region} srcSet="" style={item.region !== 'Yogyakarta' ? {
+                                    width: '40px',
+                                    height: '40px'
+                                }
+                                    :
+                                    {
+                                        width: '35px',
+                                        height: '40px'
+                                    }} />
+                                <p>{item.desc}</p>
+                                <div className="overlay"></div>
+                            </a>
+                        ))
+                    }
+                </div>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
+                    {
+                        main4.map((item, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item mx-3" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
                                 <h4>{item.name}</h4>
                                 <img src={item.logo} className="item-logo" alt={item.region} srcSet="" style={item.region !== 'Yogyakarta' ? {

@@ -23,27 +23,27 @@ export default function Footer() {
                     <div className="social">
                         <ul>
                             <li>
-                                <a href="http://">
+                                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/geschool/">
                                     <img src={iconIg} alt="icon-ig" srcset="" />
                                 </a>
                             </li>
                             <li>
-                                <a href="http://">
+                                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/GCMFoundation/">
                                     <img src={iconFb} alt="icon-fb" srcset="" />
                                 </a>
                             </li>
                             <li>
-                                <a href="http://">
+                                <a target="_blank" rel="noreferrer" href="https://twitter.com/GeschoolCM">
                                     <img src={iconTw} alt="icon-tw" srcset="" />
                                 </a>
                             </li>
                             <li>
-                                <a href="http://">
+                                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCaQ8ffYgBKgJPRzEFCnvPIg">
                                     <img src={iconYt} alt="icon-yt" srcset="" />
                                 </a>
                             </li>
                             <li>
-                                <a href="http://">
+                                <a target="_blank" rel="noreferrer" href="#">
                                     <img src={iconLi} alt="icon-li" srcset="" />
                                 </a>
                             </li>

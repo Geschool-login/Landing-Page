@@ -12,6 +12,8 @@ import bgSumbar from '../../assets/img/main-bg/sumbar.png'
 import bgMadrasahDiy from '../../assets/img/main-bg/madrasah-diy.png'
 import bgMuhammadiyah from '../../assets/img/main-bg/muhammadiyah.png'
 import bgMadrasahSumbar from '../../assets/img/main-bg/madrasah-sumbar.png'
+import bgMadrasahJateng from '../../assets/img/main-bg/madrasah-jateng.png'
+import bgMadrasahSumut from '../../assets/img/main-bg/madrasah-sumut.png'
 
 import iconArrow from '../../assets/img/icon/arrow.svg'
 
@@ -22,6 +24,7 @@ export default function ProvPage() {
 
     const [main1, setMain1] = useState([])
     const [main2, setMain2] = useState([])
+    const [main3, setMain3] = useState([])
 
     const summary = {
         items1: [
@@ -75,36 +78,67 @@ export default function ProvPage() {
                 'logo': `${logoMadrasahSumbar}`,
                 'bg': `${bgMadrasahSumbar}`
             },
+        ],
+        items3: [
+            {
+                'name': 'Madrasah Jawa Tengah',
+                'desc': 'madrasahjateng.net',
+                'link': 'https://madrasahjateng.net',
+                'region': 'Madrasah-Jateng',
+                'logo': `${logoMadrasahSumbar}`,
+                'bg': `${bgMadrasahJateng}`
+            },
+            {
+                'name': 'Madrasah Sumatera Utara',
+                'desc': 'madrasahsumut.net',
+                'link': 'https://madrasahsumut.net',
+                'region': 'Madrasah-Sumut',
+                'logo': `${logoMadrasahSumbar}`,
+                'bg': `${bgMadrasahSumut}`
+            },
         ]
     }
 
     useEffect(() => {
         setMain1(summary.items1)
         setMain2(summary.items2)
+        setMain3(summary.items3)
     }, [])
 
     return (
         <div className="main-container text-center kab-page">
-            <h3>Selamat Datang di Web Provinsi / Institusi</h3>
+            <h2>Selamat Datang di Web Provinsi / Institusi</h2>
             <div className="main-content-container">
-                <div className="content-item d-flex mb-5" data-aos={'zoom-in'}>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
                     {
                         main1.map((item, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item mx-3" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
                                 <h4>{item.name}</h4>
-                                <img src={item.logo} className={item.region !== 'Yogyakarta' ? 'item-logo' : 'item-logo-kab'} alt={item.region} srcSet="" />
+                                <img src={item.logo} className={item.region !== 'Yogyakarta' ? 'item-logo-prov' : 'item-logo'} alt={item.region} srcSet="" />
                                 <p>{item.desc}</p>
                                 <div className="overlay"></div>
                             </a>
                         ))
                     }
                 </div>
-                <div className="content-item d-flex mb-5" data-aos={'zoom-in'}>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
                     {
                         main2.map((item, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item mx-3" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
                                 <h4>{item.name}</h4>
-                                <img src={item.logo} className={item.region !== 'Yogyakarta' ? 'item-logo' : 'item-logo-kab'} alt={item.region} srcSet="" />
+                                <img src={item.logo} className={item.region !== 'Yogyakarta' ? 'item-logo-prov' : 'item-logo'} alt={item.region} srcSet="" />
+                                <p>{item.desc}</p>
+                                <div className="overlay"></div>
+                            </a>
+                        ))
+                    }
+                </div>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
+                    {
+                        main3.map((item, index) => (
+                            <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item mx-3" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
+                                <h4>{item.name}</h4>
+                                <img src={item.logo} className={item.region !== 'Yogyakarta' ? 'item-logo-prov' : 'item-logo'} alt={item.region} srcSet="" />
                                 <p>{item.desc}</p>
                                 <div className="overlay"></div>
                             </a>

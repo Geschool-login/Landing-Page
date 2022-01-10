@@ -33,7 +33,7 @@
 }
 
 .main-container .content-item .item {
-    width: 40%;
+    width: 30%;
     height: 200px;
     border-radius: 10px;
     color: #fff;
@@ -43,13 +43,18 @@
 }
 
 .main-container .content-item .item .item-logo {
-    width: 80px;
+    width: 90px;
     height: 112px;
     z-index: 2;
 }
 
-.main-container .content-item .item .item-logo-i {
+.main-container .content-item .item .item-logo-kab {
     width: 100px;
+    height: 112px;
+}
+
+.main-container .content-item .item .item-logo-prov {
+    width: 112px;
     height: 112px;
 }
 
@@ -62,6 +67,7 @@
 .main-container .content-item .item p {
     text-decoration: underline;
     z-index: 2;
+    margin-top: 5px;
 }
 
 .main-container .content-footer {
@@ -135,6 +141,14 @@
 
     .desktop {
         display: none !important;
+    }
+
+    .main-content-container {
+        margin: -20px 0 80px 0;
+    }
+
+    .main-content-container .content-item {
+        margin: 50px 0 0 0;
     }
 
     .main-container .content-item .item {
