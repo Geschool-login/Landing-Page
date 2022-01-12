@@ -81,7 +81,7 @@ export default function ProvPage() {
         ],
         items3: [
             {
-                'name': 'Madrasah Jawa Tengah',
+                'name': 'Madrasah Jateng',
                 'desc': 'madrasahjateng.net',
                 'link': 'https://madrasahjateng.net',
                 'region': 'Madrasah-Jateng',
@@ -89,7 +89,7 @@ export default function ProvPage() {
                 'bg': `${bgMadrasahJateng}`
             },
             {
-                'name': 'Madrasah Sumatera Utara',
+                'name': 'Madrasah Sumut',
                 'desc': 'madrasahsumut.net',
                 'link': 'https://madrasahsumut.net',
                 'region': 'Madrasah-Sumut',
