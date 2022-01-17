@@ -93,7 +93,7 @@ export default function SlickProv() {
                     <div className='col-12'>
                         <Link key={index} to="/page/prov" className="col-12 main-item-img bottom-slick-item" style={{backgroundImage: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
                             <h2>{item.name}</h2>
-                            <img src={item.logo} className={ item.region !== 'Yogyakarta' ? 'item-logo-slick-prov' : 'item-logo-slick-prov-s' } alt={item.region} srcSet="" />
+                            <img src={item.logo} className={item.region !== 'Yogyakarta' ? 'item-logo-slick-prov' : 'item-logo-slick-prov-s' } alt={item.region} srcSet="" />
                             <p>{item.desc}</p>
                             <div className="overlay"></div>
                         </Link>

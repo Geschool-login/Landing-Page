@@ -40,7 +40,7 @@ export default function Hero() {
                 <Slider {...carouselSettings}>
                     {
                         background.map((item, index) => (
-                            <img key={index} src={item} alt="" srcset="" />
+                            <img key={index} src={item} className="hero-slick-img" alt="" srcset="" />
                         ))
                     }
                 </Slider>
@@ -49,7 +49,7 @@ export default function Hero() {
                 <Slider {...carouselSettings}>
                     {
                         mbackground.map((item, index) => (
-                            <img key={index} src={item} alt="" srcset="" />
+                            <img key={index} src={item} className="hero-slick-img"  alt="" srcset="" />
                         ))
                     }
                 </Slider>

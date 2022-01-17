@@ -40,7 +40,7 @@
     display: none !important;
 }
 
-.slick-slide img {
+.slick-slide .hero-slick-img {
     display: block;
     margin-top: auto;
     margin-bottom: auto;
@@ -58,7 +58,7 @@
         height: 60vh;
     }
 
-    .slick-slide img {
+    .slick-slide .hero-slick-img {
         height: 60vh;
     }
 
@@ -78,7 +78,7 @@
         flex-direction: column;
     }
 
-    .slick-slide img {
+    .slick-slide .hero-slick-img {
         width: 768px;
         height: 50vh;
     }
