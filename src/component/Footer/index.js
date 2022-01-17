@@ -5,14 +5,17 @@ import iconIg from '../../assets/img/icon/instagram.svg'
 import iconYt from '../../assets/img/icon/youtube.svg'
 import iconFb from '../../assets/img/icon/facebook.svg'
 import iconTw from '../../assets/img/icon/twitter.svg'
-import iconLi from '../../assets/img/icon/linkedin.svg'
+// import iconLi from '../../assets/img/icon/linkedin.svg'
 
 import './Footer.css'
 
 export default function Footer() {
     return (
         <div className="col-12 footer-container">
-            <h1>What's Geschool?</h1>
+            
+                <h1>
+                <a href="http://s.id/geschool" target="_blank" rel="noopener noreferrer">What's Geschool?</a>
+                </h1>
             <div className="footer-content">
                 <div className="logo">
                     <img src={logoYayasan} alt="logo" srcset="" />
@@ -28,7 +31,7 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/GCMFoundation/">
+                                <a target="_blank" rel="noreferrer" href="https://web.facebook.com/geschool.net">
                                     <img src={iconFb} alt="icon-fb" srcset="" />
                                 </a>
                             </li>
@@ -38,15 +41,15 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCaQ8ffYgBKgJPRzEFCnvPIg">
+                                <a target="_blank" rel="noreferrer" href="https://youtube.com/geschoolcm">
                                     <img src={iconYt} alt="icon-yt" srcset="" />
                                 </a>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a target="_blank" rel="noreferrer" href="#">
                                     <img src={iconLi} alt="icon-li" srcset="" />
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
