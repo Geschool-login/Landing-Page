@@ -9,11 +9,14 @@ import logoMagelang from '../../assets/img/logo/magelang.png'
 import logoBantul from '../../assets/img/logo/bantul.png'
 import logoKulonProgo from '../../assets/img/logo/kulonprogo.png'
 import logoBukittinggi from '../../assets/img/logo/bukittinggi.png'
+import logoTemanggung from '../../assets/img/logo/temanggung.png'
 
 import bgMagelang from '../../assets/img/main-bg/magelang.png'
 import bgBantul from '../../assets/img/main-bg/bantul.png'
 import bgKulonProgo from '../../assets/img/main-bg/kulonprogo.png'
 import bgBukittinggi from '../../assets/img/main-bg/bukittinggi.png'
+import bgTemanggung from '../../assets/img/main-bg/temanggung.jpg'
+
 import { Link } from 'react-router-dom';
 
 export default function SlickKab2() {
@@ -59,7 +62,14 @@ export default function SlickKab2() {
                 'region': 'Bukittinggi',
                 'logo': `${logoBukittinggi}`,
                 'bg': `${bgBukittinggi}`
-            }
+            },
+            {
+                'name': 'Geschool Temanggung',
+                'desc': 'Temanggung Blended Learning',
+                'region': 'Temanggung',
+                'logo': `${logoTemanggung}`,
+                'bg': `${bgTemanggung}`
+            },
         ]
     }
 

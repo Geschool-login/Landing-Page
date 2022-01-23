@@ -11,6 +11,8 @@ import logoKulonProgo from '../../assets/img/logo/kulonprogo.png'
 import logoBukittinggi from '../../assets/img/logo/bukittinggi.png'
 import logoPekanbaru from '../../assets/img/logo/pekanbaru.png'
 import logoJeneponto from '../../assets/img/logo/jeneponto.png'
+import logoTemanggung from '../../assets/img/logo/temanggung.png'
+
 
 import bgPadang from '../../assets/img/web-bg/padang.png'
 import bgYogya from '../../assets/img/web-bg/yogya.png'
@@ -23,6 +25,8 @@ import bgKulonProgo from '../../assets/img/web-bg/kulonprogo.png'
 import bgBukittinggi from '../../assets/img/web-bg/bukittinggi.png'
 import bgPekanbaru from '../../assets/img/web-bg/pekanbaru.png'
 import bgJeneponto from '../../assets/img/web-bg/jeneponto.png'
+import bgTemanggung from '../../assets/img/main-bg/temanggung.jpg'
+
 
 import iconArrow from '../../assets/img/icon/arrow.svg'
 
@@ -131,7 +135,15 @@ export default function KabPage() {
                 'region': 'Jeneponto',
                 'logo': `${logoJeneponto}`,
                 'bg': `${bgJeneponto}`
-            }
+            },
+            {
+                'name': 'Geschool Temanggung',
+                'desc': 'temanggung.geschool.net',
+                'link': 'https://temanggung.geschool.net',
+                'region': 'Temanggung',
+                'logo': `${logoTemanggung}`,
+                'bg': `${bgTemanggung}`
+            },
         ]
     }
 
