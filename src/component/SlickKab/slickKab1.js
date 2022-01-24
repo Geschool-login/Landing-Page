@@ -10,12 +10,17 @@ import logoYogya from '../../assets/img/logo/yogya-kota.png'
 import logoGunungKidul from '../../assets/img/logo/gunungkidul.png'
 import logoSleman from '../../assets/img/logo/sleman.png'
 import logoTangsel from '../../assets/img/logo/tangsel.png'
+import logoBulukumba from '../../assets/img/logo/bulukumba.png'
+
 
 import bgPadang from '../../assets/img/main-bg/padang.png'
 import bgYogya from '../../assets/img/main-bg/yogya-kota.png'
 import bgGunungKidul from '../../assets/img/main-bg/gunungkidul.png'
 import bgSleman from '../../assets/img/main-bg/sleman.png'
 import bgTangsel from '../../assets/img/main-bg/tangsel.png'
+import bgBulukumba from '../../assets/img/main-bg/bulukumba.jpg'
+
+
 import { Link } from 'react-router-dom';
 
 export default function SlickKab1() {
@@ -69,6 +74,13 @@ export default function SlickKab1() {
                 'region': 'Tangerang',
                 'logo': `${logoTangsel}`,
                 'bg': `${bgTangsel}`
+            },
+            {
+                'name': 'Geschool Bulukumba',
+                'desc': 'Bulukumba Blended Learning',
+                'region': 'Bulukumba',
+                'logo': `${logoBulukumba}`,
+                'bg': `${bgBulukumba}`
             }
         ]
     }

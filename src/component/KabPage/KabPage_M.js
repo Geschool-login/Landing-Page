@@ -12,6 +12,8 @@ import logoBukittinggi from '../../assets/img/logo/bukittinggi.png'
 import logoPekanbaru from '../../assets/img/logo/pekanbaru.png'
 import logoJeneponto from '../../assets/img/logo/jeneponto.png'
 import logoTemanggung from '../../assets/img/logo/temanggung.png'
+import logoBulukumba from '../../assets/img/logo/bulukumba.png'
+
 
 import bgPadang from '../../assets/img/web-bg/padang.png'
 import bgYogya from '../../assets/img/web-bg/yogya.png'
@@ -25,6 +27,8 @@ import bgBukittinggi from '../../assets/img/web-bg/bukittinggi.png'
 import bgPekanbaru from '../../assets/img/web-bg/pekanbaru.png'
 import bgJeneponto from '../../assets/img/web-bg/jeneponto.png'
 import bgTemanggung from '../../assets/img/main-bg/temanggung.jpg'
+import bgBulukumba from '../../assets/img/main-bg/bulukumba.jpg'
+
 
 import iconArrow from '../../assets/img/icon/arrow.svg'
 
@@ -39,6 +43,7 @@ export default function KabPage() {
     const [main_m4, setMain_m4] = useState([])
     const [main_m5, setMain_m5] = useState([])
     const [main_m6, setMain_m6] = useState([])
+    const [main_m7, setMain_m7] = useState([])
 
 
     const summary_m = {
@@ -149,6 +154,16 @@ export default function KabPage() {
                 'logo': `${logoTemanggung}`,
                 'bg': `${bgTemanggung}`
             },
+        ],
+        items7: [
+            {
+                'name': 'Geschool Bulukumba',
+                'desc': 'bulukumba.geschool.net',
+                'link': 'https://bulukumba.geschool.net',
+                'region': 'Bulukumba',
+                'logo': `${logoBulukumba}`,
+                'bg': `${bgBulukumba}`
+            },
         ]
     }
 
@@ -159,6 +174,7 @@ export default function KabPage() {
         setMain_m4(summary_m.items4)
         setMain_m5(summary_m.items5)
         setMain_m6(summary_m.items6)
+        setMain_m7(summary_m.items7)
     }, [])
 
     return (
@@ -238,6 +254,26 @@ export default function KabPage() {
                 <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
                     {
                         main_m6.map((item, index) => (
+                            <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
+                                <h4>{item.name}</h4>
+                                <img src={item.logo} className="item-logo" alt={item.region} srcSet="" style={item.region !== 'Jeneponto' ? {
+                                    width: '30px',
+                                    height: '40px'
+                                }
+                                    :
+                                    {
+                                        width: '40px',
+                                        height: '40px'
+                                    }} />
+                                <p>{item.desc}</p>
+                                <div className="overlay"></div>
+                            </a>
+                        ))
+                    }
+                </div>
+                <div className="content-item d-flex justify-content-center mb-5" data-aos={'zoom-in'}>
+                    {
+                        main_m7.map((item, index) => (
                             <a key={index} target="_blank" rel="noreferrer" href={item.link} className="item" style={{ background: `url(${item.bg})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
                                 <h4>{item.name}</h4>
                                 <img src={item.logo} className="item-logo" alt={item.region} srcSet="" style={item.region !== 'Jeneponto' ? {
