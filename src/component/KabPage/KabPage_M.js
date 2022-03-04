@@ -13,6 +13,7 @@ import logoPekanbaru from '../../assets/img/logo/pekanbaru.png'
 import logoJeneponto from '../../assets/img/logo/jeneponto.png'
 import logoTemanggung from '../../assets/img/logo/temanggung.png'
 import logoBulukumba from '../../assets/img/logo/bulukumba.png'
+import logoSamarinda from '../../assets/img/logo/samarinda.png'
 
 
 import bgPadang from '../../assets/img/web-bg/padang.png'
@@ -28,6 +29,7 @@ import bgPekanbaru from '../../assets/img/web-bg/pekanbaru.png'
 import bgJeneponto from '../../assets/img/web-bg/jeneponto.png'
 import bgTemanggung from '../../assets/img/main-bg/temanggung.jpg'
 import bgBulukumba from '../../assets/img/main-bg/bulukumba.jpg'
+import bgSamarinda from '../../assets/img/web-bg/samarinda.jpg'
 
 
 import iconArrow from '../../assets/img/icon/arrow.svg'
@@ -164,6 +166,14 @@ export default function KabPage() {
                 'logo': `${logoBulukumba}`,
                 'bg': `${bgBulukumba}`
             },
+            {
+                'name': 'Geschool Samarinda',
+                'desc': 'samarinda.geschool.net',
+                'link': 'https://samarinda.geschool.net',
+                'region': 'Jeneponto',
+                'logo': `${logoSamarinda}`,
+                'bg': `${bgSamarinda}`
+            }
         ]
     }
 

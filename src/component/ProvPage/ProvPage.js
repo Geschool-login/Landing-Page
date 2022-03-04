@@ -5,6 +5,7 @@ import logoSumbar from '../../assets/img/logo/sumbar.png'
 import logoMadrasahDiy from '../../assets/img/logo/madrasah-diy.png'
 import logoMuhammadiyah from '../../assets/img/logo/muhammadiyah.png'
 import logoMadrasahSumbar from '../../assets/img/logo/madrasah.png'
+import logoKalimatanTimur from '../../assets/img/logo/kalimantan-timur.png'
 
 import bgYogyakarta from '../../assets/img/main-bg/yogyakarta.png'
 import bgBanten from '../../assets/img/main-bg/banten.png'
@@ -14,6 +15,7 @@ import bgMuhammadiyah from '../../assets/img/main-bg/muhammadiyah.png'
 import bgMadrasahSumbar from '../../assets/img/main-bg/madrasah-sumbar.png'
 import bgMadrasahJateng from '../../assets/img/main-bg/madrasah-jateng.png'
 import bgMadrasahSumut from '../../assets/img/main-bg/madrasah-sumut.png'
+import bgKalimantanTimur from '../../assets/img/web-bg/kalimantan-timur.jpg'
 
 import iconArrow from '../../assets/img/icon/arrow.svg'
 
@@ -96,6 +98,14 @@ export default function ProvPage() {
                 'logo': `${logoMadrasahSumbar}`,
                 'bg': `${bgMadrasahSumut}`
             },
+            {
+                'name': 'Kalimantan Timur',
+                'desc': 'kaltim.geschool.net',
+                'link': 'https://kaltim.geschool.net',
+                'region': 'Yogyakarta',
+                'logo': `${logoKalimatanTimur}`,
+                'bg': `${bgKalimantanTimur}`
+            }
         ]
     }
 

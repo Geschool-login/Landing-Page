@@ -11,6 +11,8 @@ import logoSumbar from '../../assets/img/logo/sumbar.png'
 import logoMadrasahDiy from '../../assets/img/logo/madrasah-diy.png'
 import logoMuhammadiyah from '../../assets/img/logo/muhammadiyah.png'
 import logoMadrasahSumbar from '../../assets/img/logo/madrasah.png'
+import logoKalimatanTimur from '../../assets/img/logo/kalimantan-timur.png'
+
 
 import bgYogyakarta from '../../assets/img/main-bg/yogyakarta.png'
 import bgBanten from '../../assets/img/main-bg/banten.png'
@@ -18,6 +20,9 @@ import bgSumbar from '../../assets/img/main-bg/sumbar.png'
 import bgMadrasahDiy from '../../assets/img/main-bg/madrasah-diy.png'
 import bgMuhammadiyah from '../../assets/img/main-bg/muhammadiyah.png'
 import bgMadrasahSumbar from '../../assets/img/main-bg/madrasah-sumbar.png'
+import bgKalimantanTimur from '../../assets/img/web-bg/kalimantan-timur.jpg'
+
+
 import { Link } from 'react-router-dom';
 
 export default function SlickProv() {
@@ -78,6 +83,13 @@ export default function SlickProv() {
                 'logo': `${logoMadrasahSumbar}`,
                 'bg': `${bgMadrasahSumbar}`
             },
+            {
+                'name': 'Kalimantan Timur',
+                'desc': 'Kalimantan Timur Blended Learning',
+                'region': 'Yogyakarta',
+                'logo': `${logoKalimatanTimur}`,
+                'bg': `${bgKalimantanTimur}`
+            }
         ]
     }
 

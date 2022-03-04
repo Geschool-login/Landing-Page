@@ -10,12 +10,16 @@ import logoBantul from '../../assets/img/logo/bantul.png'
 import logoKulonProgo from '../../assets/img/logo/kulonprogo.png'
 import logoBukittinggi from '../../assets/img/logo/bukittinggi.png'
 import logoTemanggung from '../../assets/img/logo/temanggung.png'
+import logoSamarinda from '../../assets/img/logo/samarinda.png'
+
 
 import bgMagelang from '../../assets/img/main-bg/magelang.png'
 import bgBantul from '../../assets/img/main-bg/bantul.png'
 import bgKulonProgo from '../../assets/img/main-bg/kulonprogo.png'
 import bgBukittinggi from '../../assets/img/main-bg/bukittinggi.png'
 import bgTemanggung from '../../assets/img/main-bg/temanggung.jpg'
+import bgSamarinda from '../../assets/img/web-bg/samarinda.jpg'
+
 
 import { Link } from 'react-router-dom';
 
@@ -70,6 +74,13 @@ export default function SlickKab2() {
                 'logo': `${logoTemanggung}`,
                 'bg': `${bgTemanggung}`
             },
+            {
+                'name': 'Geschool Samarinda',
+                'desc': 'Samarinda Blended Learning',
+                'region': 'Tangerang',
+                'logo': `${logoSamarinda}`,
+                'bg': `${bgSamarinda}`
+            }
         ]
     }
 
